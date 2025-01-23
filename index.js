@@ -6,10 +6,10 @@ const path = require('path');
 const app = express();
 const port = 3010;
 
-// Middleware to parse JSON requests
+
 app.use(bodyParser.json());
 
-// Read student data from data.json
+
 const dataPath = path.join(__dirname, 'data.json');
 let students = [];
 
